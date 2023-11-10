@@ -32,15 +32,13 @@ export default function Test() {
       >
         {[
           { to: "/", text: "Home" },
-          { to: "/buy", text: "Buy" },
-          { to: "/news", text: "News" },
-          { to: "/about", text: "About" },
+          { to: "/", text: "Buy" },
+          { to: "/", text: "News" },
+          { to: "/", text: "About" },
         ].map((linkItem, index) => (
-          <Link key={index}  href={linkItem.to}>
-            <motion.li className="motion-item" variants={item}>
-              {linkItem.text}
-            </motion.li>
-          </Link>
+          <motion.li key={index} className="motion-item" variants={item}>
+            <Link href={linkItem.to}>{linkItem.text} </Link>
+          </motion.li>
         ))}
       </motion.ul>
     </>
