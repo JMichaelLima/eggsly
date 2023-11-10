@@ -1,3 +1,25 @@
 @tailwind base;
+.motion-item {
+    @apply bg-white;
+    @apply rounded-2xl;
+    @apply p-3;
+    @apply text-blue-950;
+    @apply font-thin;
+    @apply text-lg;
+    @apply text-center; 
+}
+.motion-container {
+    @apply grid;
+    @apply overflow-hidden;
+    @apply m-6;
+    @apply list-none;
+    @apply grid-cols-4;
+    @apply grid-rows-1;
+    @apply gap-3.5;
+    @apply p-6;
+    @apply bg-white;
+    @apply bg-opacity-20;
+    @apply rounded-md;
+}
 @tailwind components;
 @tailwind utilities;
