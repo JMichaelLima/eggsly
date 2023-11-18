@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
@@ -21,27 +22,29 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <motion.nav className="text-white flex justify-center">
-      <ul>
-        {navLinks.map((link, index) => (
-          <motion.li
-            key={index}
-            className="inline-block m-2"
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-            custom={index}
-          >
-            <Link
-              href={link.linkUrl}
-              className="bg-blue-300 bg-opacity-20 border-t-2 border-l-2 border-white hover:shadow-2xl text-sky-100 font-light sm:text-xl rounded-full w-20 h-20 sm:w-28 sm:h-28 shadow-lg cursor-pointer flex justify-center items-center"
+    <motion.div className="container mx-auto p-4">
+      <motion.nav className="text-white flex justify-center">
+        <ul>
+          {navLinks.map((link, index) => (
+            <motion.li
+              key={index}
+              className="inline-block m-2"
+              variants={itemVariants}
+              initial="hidden"
+              animate="visible"
+              custom={index}
             >
-              {link.linkText}
-            </Link>
-          </motion.li>
-        ))}
-      </ul>
-    </motion.nav>
+              <Link
+                href={link.linkUrl}
+                className="bg-blue-300 bg-opacity-20 border-t-2 border-l-2 border-white hover:shadow-2xl text-sky-100 font-light sm:text-xl rounded-full w-20 h-20 sm:w-28 sm:h-28 shadow-lg cursor-pointer flex justify-center items-center"
+              >
+                {link.linkText}
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+      </motion.nav>
+    </motion.div>
   );
 };
 
