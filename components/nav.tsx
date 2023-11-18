@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
             >
               <Link
                 href={link.linkUrl}
-                className="bg-blue-300 bg-opacity-20 border-t-2 border-l-2 border-white hover:shadow-2xl text-sky-100 font-light sm:text-xl rounded-full w-20 h-20 sm:w-28 sm:h-28 shadow-lg cursor-pointer flex justify-center items-center"
+                className="text-sky-50 shadow cursor-pointer flex justify-center items-center"
               >
                 {link.linkText}
               </Link>
