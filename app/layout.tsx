@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/nav";
+import Header from "@/components/header";
 import { Amplify } from 'aws-amplify';
 import amplifyconfig from '../src/amplifyconfiguration.json';
 //Amplify.configure(amplifyconfig);
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <div className="min-h-screen bg-gradient-to-br from-blue-800 to-green-800 via-slate-600">
-          <Nav />
+          <Header />
           {children}
         </div>
       </body>

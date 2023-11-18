@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <motion.div className="container mx-auto p-4">
+    <motion.div className="container mx-auto p-4 bg-white text-blue-950 rounded-lg">
       <motion.nav className="text-white flex justify-center">
         <ul>
           {navLinks.map((link, index) => (

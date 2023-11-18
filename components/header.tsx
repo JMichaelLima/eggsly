@@ -2,18 +2,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./grid";
+import LogoPic from "../app/assets/aspen.svg";
+import Nav from "./nav";
 
 export default function Header() {
-
   return (
-    <div className="flex justify-around bg-sky-100">
-      <Logo/>
-      <ul className="flex justify-between">
-        <li>Services</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <div className="flex justify-between p-3">
+      <Image src={LogoPic} alt="Eggsly Logo" height={75} />
+      <Nav />
     </div>
   );
 }
