@@ -22,8 +22,8 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <motion.div className="container mx-auto p-4 bg-white text-blue-950 rounded-lg">
-      <motion.nav className="text-white flex justify-center">
+    <motion.div className="container mx-auto p-4 bg-black bg-opacity-10 max-w-max rounded-xl shadow">
+      <motion.nav className="flex justify-center">
         <ul>
           {navLinks.map((link, index) => (
             <motion.li
@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
             >
               <Link
                 href={link.linkUrl}
-                className="text-sky-50 shadow cursor-pointer flex justify-center items-center"
+                className="text-sky-50 cursor-pointer flex justify-center items-center px-1"
               >
                 {link.linkText}
               </Link>
