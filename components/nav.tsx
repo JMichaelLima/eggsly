@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
             >
               <Link
                 href={link.linkUrl}
-                className="text-sky-50 cursor-pointer flex justify-center items-center px-1"
+                className="text-sky-50 cursor-pointer flex justify-center items-center px-1 sm:px-6"
               >
                 {link.linkText}
               </Link>
