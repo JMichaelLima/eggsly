@@ -7,8 +7,8 @@ import Nav from "./nav";
 
 export default function Header() {
   return (
-    <div className="flex justify-between p-1 sm:p-3 items-center">
-      <Image src={LogoPic} alt="Eggsly Logo" height={100} />
+    <div className="flex justify-between p-3 sm:p-3 items-center">
+      <Image src={LogoPic} alt="Eggsly Logo" height={75} />
       <Nav />
     </div>
   );

@@ -27,8 +27,8 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <div className="min-h-screen bg-gradient-to-br from-blue-800 to-green-800 via-slate-600">
           <Header />
-          <div className="m-4 p-3 sm:m-10 sm:p-10 bg-black opacity-10 rounded-xl">
-            <div className="text-sky-50ß">{children}</div>
+          <div className="m-4 p-3 sm:m-10 sm:p-10 bg-slate-300 opacity-80 rounded-xl">
+            <div className="text-sky-950">{children}</div>
           </div>
         </div>
       </body>
